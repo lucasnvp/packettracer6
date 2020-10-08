@@ -59,7 +59,15 @@ ip access-group 101 out
 
 ```
 remotox(config)# access-list 1 permit 192.168.1.0 0.0.0.127
+remotox(config)# interface fa0/1
 remotox(config-if)# ip access-group 1 in
+```
+
+Para denegar un host
+```
+remotox(config)# access-list 1 deny 192.168.1.22 0.0.0.0
+remotox(config)# interface fa0/1
+remotox(config-if)# ip access-group 1 out
 ```
 
 ## VPN
