@@ -1,8 +1,8 @@
-## Configurar VLANs
+## Configurar VLANs lado Router
 ```
-Router(confiinterface fastEthernet 0/0interface fastEthernet 0/0.1
+Router(config)#interface fastEthernet 0/0.1
 Router(config-subif)#encapsulation dot1Q 1
-Router(config-if)#ip address 10.1.0.1 255.255.255.0
+Router(config-subif)#ip address 10.1.0.1 255.255.255.0
 Router(config-subif)#no shutdown 
 ```
 
